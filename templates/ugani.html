@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ugani glavno mesto</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container">
+        <h1>Ugani glavno mesto države <i>{{prestolnica.drzava}}</i></h1>
+        <p class="lead">
+            <form method="post" action="/rezultat">
+                <input name="odgovor" class="form-control-sm"/>
+                <input type="hidden" name="mesto" value="{{prestolnica.mesto}}"/>
+                <button type="submit">Odgovor</button>
+            </form>
+
+
+        {{prestolnica.slika}}
+        </p>
+    </main>
+</body>
+</html>

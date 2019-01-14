@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezultat</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container">
+       <p class="lead">
+           {% if rezultat_ugibanja %}
+           Čestitke, vaš odgovor je pravilen.
+           {% else %}
+           Ne bo držalo. Pravilni odgovor je {{ mesto }}!
+           {% endif %}
+
+           Testiram: {{ odgovor }}
+       </p>
+    </main>
+</body>
+</html>
